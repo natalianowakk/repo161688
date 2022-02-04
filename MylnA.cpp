@@ -26,11 +26,7 @@ public:
 
     }
     double value(){
-        double lnx = double log(mA);
-        for (int i=0; i<10; i++){
-            lnx+=pow(-1,i)/(pow(mA,i+1))*pow((mX-mA),i+1)/(i+1);
-        }
-        return lnx;
+        
 
     }
     void setX(double){
