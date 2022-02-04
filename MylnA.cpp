@@ -1,16 +1,16 @@
 #include <iostream>
 using namespace std;
-
+// Dokumentacja klasy MylnA
 class MylnA
 {
-private:
-    double mX;
-    double mA;
-public:
-    MylnA(double a=0){
+private: /**Deklaracja metod prywatnych*/ 
+    double mX; /*!< definicja zmiennych prywatnych *///zmienna double mX//
+    double mA; /*!< definicje zmiennych prywatnych */ //zmienna double mX//
+public: /**Deklaracja metod publicznych*/ 
+    MylnA(double a=0){/** Definicja publicznej metody double*/
     mA=a;
     }
-    MylnA(double x, double a=0){
+    MylnA(double x, double a=0){// *metoda z 2 paramterami*//
     mX=x;
     mA=a;
     };
@@ -25,21 +25,20 @@ public:
         mA=0;
 
     }
-    double value(){
-        
+    double value(){/** Metoda value **/
 
     }
-    void setX(double){
+    void setX(double){ /** Metoda set x **/
     mX=x;
     }
-    double getX(){
+    double getX(){ /** Metoda get x **//
         return mX;
 
     };
-    void setA(double a){
+    void setA(double a){ /** Metoda set a **/
     mA=a;
     };
-    double getA(){
+    double getA(){ /*metoda get a */
 return mA;
     }
     
